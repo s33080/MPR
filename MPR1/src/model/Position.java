@@ -1,4 +1,4 @@
-package Employees;
+package model;
 
 public enum Position {
     PRESIDENT("president", 25000),
@@ -17,5 +17,8 @@ public enum Position {
     @Override
     public String toString() {
         return name;
+    }
+    public double getDefaultSalary() {
+        return defaultSalary;
     }
 }
