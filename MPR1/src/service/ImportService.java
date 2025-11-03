@@ -12,8 +12,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ImportService {
-    public ImportSummary ImportFromCsv(String filePath, EmployeeService employeeService) throws FileNotFoundException {
+    public ImportSummary ImportFromCsv(String filePath) throws FileNotFoundException {
         //Available Enums
+        EmployeeService employeeService = EmployeeService.getInstance();
         HashSet<String> validPositions = new HashSet<String>();
         for(Position position : Position.values()) {
             validPositions.add(position.toString().toUpperCase());

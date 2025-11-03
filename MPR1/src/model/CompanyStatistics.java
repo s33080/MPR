@@ -41,4 +41,8 @@ public class CompanyStatistics {
     public void setEmployeeWithHighestSalary(String employeeWithHighestSalary) {
         this.employeeWithHighestSalary = employeeWithHighestSalary;
     }
+    @Override
+    public String toString() {
+        return getCompanyName() + "\t\tNumber of employees:\t " + getEmployeeCount() + "\t\tAverage salary:\t " + getAverageSalary() + "\t\tHighest salary:\t " + getHighestSalary() + ", "+getEmployeeWithHighestSalary();
+    }
 }

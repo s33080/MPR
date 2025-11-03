@@ -48,7 +48,7 @@ public class Employee {
             }
             return this;
         }
-        public Builder setSalary(int salary) {
+        public Builder setSalary(double salary) {
             this.salary = salary;
             return this;
         }

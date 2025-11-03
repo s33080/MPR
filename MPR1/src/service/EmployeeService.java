@@ -76,6 +76,7 @@ public class EmployeeService {
                 companyStatistics.setCompanyName(companyName);
                 companyStatistics.setEmployeeCount(1);
                 companyStatistics.setAverageSalary(employee.getSalary());
+                companyStatistics.setHighestSalary(employee.getSalary());
                 companyStatistics.setEmployeeWithHighestSalary(employee.getName()+" "+employee.getSurname());
                 companyStatisticsHashMap.put(companyName, companyStatistics);
             }
