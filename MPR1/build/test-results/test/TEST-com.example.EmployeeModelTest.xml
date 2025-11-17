@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.EmployeeModelTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-11-17T22:57:50" hostname="PIOTRUNIA" time="0.019">
+  <properties/>
+  <testcase name="Enum Position test" classname="com.example.EmployeeModelTest" time="0.001"/>
+  <testcase name="testEnumPosition_whenSalaryNegative()" classname="com.example.EmployeeModelTest" time="0.002"/>
+  <testcase name="shouldThrowException_whenSalaryNegativeAndPositionNotSet()" classname="com.example.EmployeeModelTest" time="0.006"/>
+  <testcase name="HashCode method test" classname="com.example.EmployeeModelTest" time="0.002"/>
+  <testcase name="Equals method test" classname="com.example.EmployeeModelTest" time="0.002"/>
+  <testcase name="testEnumPosition_whenSalaryNotSet()" classname="com.example.EmployeeModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

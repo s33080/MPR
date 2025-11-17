@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.AnalyticalOperationsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-11-17T22:57:50" hostname="PIOTRUNIA" time="0.09">
+  <properties/>
+  <testcase name="groupByPositionTest()" classname="com.example.AnalyticalOperationsTest" time="0.051"/>
+  <testcase name="findByCompanyTest()" classname="com.example.AnalyticalOperationsTest" time="0.004"/>
+  <testcase name="sortBySurnameTest()" classname="com.example.AnalyticalOperationsTest" time="0.019"/>
+  <testcase name="noEmployeeTest()" classname="com.example.AnalyticalOperationsTest" time="0.001"/>
+  <testcase name="countByPositionTest()" classname="com.example.AnalyticalOperationsTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.EmployeeValidationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-11-17T22:57:50" hostname="PIOTRUNIA" time="1.034">
+  <properties/>
+  <testcase name="addNewEmployeeToEmployeeService()" classname="com.example.EmployeeValidationTest" time="0.006"/>
+  <testcase name="throwsAPIExceptionIfDataWrong()" classname="com.example.EmployeeValidationTest" time="0.939"/>
+  <testcase name="employeeIsNotAddedIfAlreadyExits()" classname="com.example.EmployeeValidationTest" time="0.002"/>
+  <testcase name="employeeIsAddedThroughAPI()" classname="com.example.EmployeeValidationTest" time="0.085"/>
+  <system-out><![CDATA[Employee already exists
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

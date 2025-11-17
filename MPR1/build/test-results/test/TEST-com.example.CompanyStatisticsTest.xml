@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.CompanyStatisticsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-11-17T22:57:50" hostname="PIOTRUNIA" time="0.055">
+  <properties/>
+  <testcase name="testCompanyStatistics()" classname="com.example.CompanyStatisticsTest" time="0.055"/>
+  <system-out><![CDATA[Apple		Number of employees:	 2		Average salary:	 5011.5		Highest salary:	 10000.0, Ala Aronia
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
