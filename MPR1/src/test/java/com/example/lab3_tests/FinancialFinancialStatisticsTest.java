@@ -1,4 +1,4 @@
-package com.example;
+package com.example.lab3_tests;
 
 import com.example.model.Employee;
 import com.example.model.Position;
@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static java.util.function.Predicate.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -151,7 +150,6 @@ public class FinancialFinancialStatisticsTest {
         employeeService.addEmployee(employee3);
         employeeService.addEmployee(employee4);
         List<Employee> employees = employeeService.validateSalaryConsistency();
-        assertEquals(employees.size(), 1);
-
+        assertEquals(1, employees.size());
     }
 }

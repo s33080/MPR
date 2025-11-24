@@ -85,6 +85,9 @@ public class EmployeeService {
     public Map<String, CompanyStatistics> getCompanyStatistics() {
         Map<String, CompanyStatistics> companyStatisticsHashMap = new HashMap<>();
         for (Employee employee : employees) {
+            if(employee == null){
+                continue;
+            }
             String companyName = employee.getCompanyName();
             if(!companyStatisticsHashMap.containsKey(companyName)){
                 //Creates new CompanyStatistics instance and puts it in the HashMap with key being companyName

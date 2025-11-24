@@ -10,6 +10,7 @@ public class Employee {
     private Position position;
     private double salary;
 
+
     //BUILDER
     public static class Builder {
         private String name;
@@ -26,22 +27,40 @@ public class Employee {
 
         //setters
         public Builder setName(String name) {
+            if(name==null){
+                throw new IllegalArgumentException("Name cannot be null");
+            }
             this.name = name;
             return this;
         }
         public Builder setSurname(String surname) {
+            if(surname==null){
+                throw new IllegalArgumentException("Surname cannot be null");
+            }
             this.surname = surname;
             return this;
         }
         public Builder setEmail(String email) {
+            if(email==null){
+                throw new IllegalArgumentException("Email cannot be null");
+            }
+            if(!email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")){
+                throw new IllegalArgumentException("Invalid email format");
+            }
             this.email = email;
             return this;
         }
         public Builder setCompanyName(String companyName) {
+            if(companyName==null){
+                throw new IllegalArgumentException("CompanyName cannot be null");
+            }
             this.companyName = companyName;
             return this;
         }
         public Builder setPosition(Position position) {
+            if(position==null){
+                throw new IllegalArgumentException("Position cannot be null");
+            }
             this.position = position;
             if(this.salary == 0){
                 this.salary = position.defaultSalary;

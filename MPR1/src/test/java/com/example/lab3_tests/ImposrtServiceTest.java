@@ -1,7 +1,5 @@
-package com.example;
+package com.example.lab3_tests;
 
-import com.example.exception.ApiException;
-import com.example.exception.InvalidDataException;
 import com.example.model.ImportSummary;
 import com.example.service.EmployeeService;
 import com.example.service.ImportService;
@@ -26,7 +24,6 @@ public class ImposrtServiceTest {
         employeeService.removeAllEmployees();
         ImportService importService = new ImportService();
         importSummary = importService.importFromCsv("src/test/resources/employees_test.csv");
-
     }
 
     @AfterEach

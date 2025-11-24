@@ -1,11 +1,10 @@
-package com.example;
+package com.example.lab3_tests;
 
 import com.example.model.Employee;
 import com.example.model.Position;
 import com.example.service.EmployeeService;
 import org.junit.jupiter.api.*;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 

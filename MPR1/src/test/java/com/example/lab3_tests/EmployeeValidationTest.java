@@ -1,4 +1,4 @@
-package com.example;
+package com.example.lab3_tests;
 
 import com.example.exception.ApiException;
 import com.example.model.Employee;
@@ -13,6 +13,7 @@ import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class EmployeeValidationTest {
@@ -83,5 +84,47 @@ public class EmployeeValidationTest {
         ApiService apiService = new ApiService();
 //        assertThrows(apiService.fetchEmployeesFromApi(path), ApiException);
         assertThrows(ApiException.class, () -> apiService.fetchEmployeesFromApi(path));
+    }
+    @Test public void throwsExceptionIfNameNull() {
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> Employee.Builder.newInstance().setName(null)
+        );
+        assertEquals("Name cannot be null", exception.getMessage());
+    }
+    @Test public void throwsExceptionIfSurnameNull() {
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> Employee.Builder.newInstance().setSurname(null)
+        );
+        assertEquals("Surname cannot be null", exception.getMessage());
+    }
+    @Test public void throwsExceptionIfEmailNull() {
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> Employee.Builder.newInstance().setEmail(null)
+        );
+        assertEquals("Email cannot be null", exception.getMessage());
+    }
+    @Test public void throwsExceptionIfEmailInvalid() {
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> Employee.Builder.newInstance().setEmail("abcd")
+        );
+        assertEquals("Invalid email format", exception.getMessage());
+    }
+    @Test public void throwsExceptionIfCompanyNameNull() {
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> Employee.Builder.newInstance().setCompanyName(null)
+        );
+        assertEquals("CompanyName cannot be null", exception.getMessage());
+    }
+    @Test public void throwsExceptionIfPositionNull() {
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> Employee.Builder.newInstance().setPosition(null)
+        );
+        assertEquals("Position cannot be null", exception.getMessage());
     }
 }

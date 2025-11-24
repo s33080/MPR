@@ -1,11 +1,10 @@
-package com.example;
+package com.example.lab3_tests;
 
 import com.example.model.Employee;
 import com.example.model.Position;
 import com.example.service.EmployeeService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.example;
+package com.example.lab3_tests;
 
 import com.example.model.Employee;
 import com.example.model.Position;
