@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.lab3_tests.EmployeeValidationTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-11-24T19:38:30" hostname="PIOTRUNIA" time="0.5">
+<testsuite name="com.example.lab3_tests.EmployeeValidationTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-11-30T20:51:31" hostname="PIOTRUNIA" time="0.544">
   <properties/>
-  <testcase name="addNewEmployeeToEmployeeService()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.013"/>
-  <testcase name="throwsAPIExceptionIfDataWrong()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.391"/>
-  <testcase name="throwsExceptionIfCompanyNameNull()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.003"/>
-  <testcase name="throwsExceptionIfPositionNull()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.002"/>
-  <testcase name="employeeIsNotAddedIfAlreadyExits()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.004"/>
+  <testcase name="addNewEmployeeToEmployeeService()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.003"/>
+  <testcase name="throwsAPIExceptionIfDataWrong()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.46"/>
+  <testcase name="throwsExceptionIfCompanyNameNull()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.001"/>
+  <testcase name="throwsExceptionIfPositionNull()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.001"/>
+  <testcase name="employeeIsNotAddedIfAlreadyExits()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.001"/>
   <testcase name="throwsExceptionIfNameNull()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.001"/>
-  <testcase name="throwsExceptionIfEmailNull()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.002"/>
-  <testcase name="throwsExceptionIfEmailInvalid()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.001"/>
-  <testcase name="employeeIsAddedThroughAPI()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.074"/>
-  <testcase name="throwsExceptionIfSurnameNull()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.001"/>
+  <testcase name="throwsExceptionIfEmailNull()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.001"/>
+  <testcase name="throwsExceptionIfEmailInvalid()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.002"/>
+  <testcase name="employeeIsAddedThroughAPI()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.069"/>
+  <testcase name="throwsExceptionIfSurnameNull()" classname="com.example.lab3_tests.EmployeeValidationTest" time="0.002"/>
   <system-out><![CDATA[Employee already exists
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

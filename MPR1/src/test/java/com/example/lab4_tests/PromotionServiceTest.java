@@ -11,11 +11,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PromotionServiceTest {
     //nextPosition
     @ParameterizedTest
-    @CsvSource({
-            "INTERN, PROGRAMMER",
-            "PROGRAMMER, MANAGER",
-            "PRESIDENT, null"
-    })
+    @CsvSource(
+            value ={
+                "INTERN, PROGRAMMER",
+                "PROGRAMMER, MANAGER",
+                "PRESIDENT, NULL"
+            },
+            nullValues = "NULL"
+    )
     public void nextPositionTest(Position position, Position expected) {
         //Arrange
         PromotionService promotionService = new PromotionService();
