@@ -1,6 +1,5 @@
 Nowa funkcjonalność: awans
 
-RED
 Planning the structure and creating tests
 
 Class: service/PromotionService
@@ -15,8 +14,13 @@ Methods:
 
 created tests
 
+RED - nextPosition
+- written test code
 
-GREEN 
+GREEN - nextPosition
 - changed CsvSource to include null correctly
 - added method nextPosition to PromotionService
-- written code for PromotionService
+- written code for method nextPosition
+
+RED - shouldReturnTrueForCanBePromoted
+- written test code

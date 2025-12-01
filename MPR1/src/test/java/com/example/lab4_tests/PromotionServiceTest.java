@@ -1,11 +1,13 @@
 package com.example.lab4_tests;
 
+import com.example.model.Employee;
 import com.example.model.Position;
 import com.example.service.PromotionService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PromotionServiceTest {
@@ -32,7 +34,19 @@ public class PromotionServiceTest {
     //canBePromoted
     @Test
     public void shouldReturnTrueForCanBePromoted() {
+        //Arrange
+        PromotionService promotionService = new PromotionService();
+        Employee employee = Employee.Builder.newInstance()
+                .setName("Jane")
+                .setSurname("Doe")
+                .setEmail("jane.doe@email.com")
+                .setCompanyName("AAA")
+                .setPosition(Position.PROGRAMMER)
+                .build();
 
+        //Assert
+        assertThat(promotionService.canBePromoted(employee))    //Asercje na wartościach boolean
+                .isTrue;
     }
     @Test
     public void shouldReturnFalseForCanNotBePromoted() {
