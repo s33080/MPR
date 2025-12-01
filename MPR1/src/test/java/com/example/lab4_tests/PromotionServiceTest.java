@@ -64,7 +64,19 @@ public class PromotionServiceTest {
     //promote
     @Test
     public void positionShouldNotBeNullAfterPromotion() {
+        PromotionService promotionService = new PromotionService();
+        Employee employee = Employee.Builder.newInstance()
+                .setName("Jane")
+                .setSurname("Doe")
+                .setEmail("jane.doe@email.com")
+                .setCompanyName("AAA")
+                .setPosition(Position.PROGRAMMER)
+                .build();
 
+        promotionService.promote(employee);
+
+        assertThat(employee.getPosition())
+                .isNotNull();
     }
     @Test
     public void positionShouldNotBeTheSameAfterPromotion() {
