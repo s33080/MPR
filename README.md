@@ -24,3 +24,14 @@ GREEN - nextPosition
 
 RED - shouldReturnTrueForCanBePromoted
 - written test code
+
+GREEN - shouldReturnTrueForCanBePromoted
+- written method canBePromoted
+- used method nextPosition in canBePromoted
+
+RED - positionShouldNotBeNullAfterPromotion
+- written test code
+
+Green 
+- written code
+- used method canBePromoted in promote

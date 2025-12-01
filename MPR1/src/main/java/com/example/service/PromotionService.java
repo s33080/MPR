@@ -28,4 +28,13 @@ public class PromotionService {
         }
         return false;
     }
+
+    public void promote(Employee employee) {
+        if(canBePromoted(employee)) {
+            employee.setPosition(nextPosition(employee.getPosition()));
+        }
+        else {
+            throw new IllegalArgumentException("Cannot promote employee");
+        }
+    }
 }

@@ -25,7 +25,7 @@ public class Employee {
         }
         private Builder() {}
 
-        //setters
+        //setters for Builder
         public Builder setName(String name) {
             if(name==null){
                 throw new IllegalArgumentException("Name cannot be null");
@@ -111,6 +111,14 @@ public class Employee {
         return salary;
     }
     public Position getPosition() {return position;}
+
+    //SETTERS
+    public void setPosition(Position position) {
+        this.position = position;
+    }
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 
     @Override
     public String toString() {
