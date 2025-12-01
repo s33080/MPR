@@ -6,8 +6,7 @@ import com.example.service.PromotionService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PromotionServiceTest {
@@ -44,9 +43,10 @@ public class PromotionServiceTest {
                 .setPosition(Position.PROGRAMMER)
                 .build();
 
+
         //Assert
         assertThat(promotionService.canBePromoted(employee))    //Asercje na wartościach boolean
-                .isTrue;
+                .isTrue();
     }
     @Test
     public void shouldReturnFalseForCanNotBePromoted() {

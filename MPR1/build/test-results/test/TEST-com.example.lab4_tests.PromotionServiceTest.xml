@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.lab4_tests.PromotionServiceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-11-30T20:51:31" hostname="PIOTRUNIA" time="0.084">
+<testsuite name="com.example.lab4_tests.PromotionServiceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-12-01T11:52:46" hostname="PIOTRUNIA" time="0.12">
   <properties/>
-  <testcase name="positionShouldNotBeNullAfterPromotion()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.012"/>
+  <testcase name="positionShouldNotBeNullAfterPromotion()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.011"/>
   <testcase name="salaryShouldBeDefaultAfterPromotionIntoProgrammer()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.001"/>
   <testcase name="salaryShouldBeRaisedByPercentage()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.001"/>
-  <testcase name="shouldReturnTrueForCanBePromoted()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.001"/>
-  <testcase name="salaryShouldBeTheSameAsBeforeIfTooMuch()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.001"/>
+  <testcase name="shouldReturnTrueForCanBePromoted()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.035"/>
+  <testcase name="salaryShouldBeTheSameAsBeforeIfTooMuch()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.0"/>
   <testcase name="shouldReturnFalseForCanNotBePromoted()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.001"/>
   <testcase name="[1] INTERN, PROGRAMMER" classname="com.example.lab4_tests.PromotionServiceTest" time="0.019"/>
   <testcase name="[2] PROGRAMMER, MANAGER" classname="com.example.lab4_tests.PromotionServiceTest" time="0.001"/>
-  <testcase name="[3] PRESIDENT, null" classname="com.example.lab4_tests.PromotionServiceTest" time="0.002"/>
+  <testcase name="[3] PRESIDENT, null" classname="com.example.lab4_tests.PromotionServiceTest" time="0.001"/>
   <testcase name="positionShouldBeManagerAfterPromotion()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.001"/>
-  <testcase name="positionShouldNotBeTheSameAfterPromotion()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.0"/>
+  <testcase name="positionShouldNotBeTheSameAfterPromotion()" classname="com.example.lab4_tests.PromotionServiceTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

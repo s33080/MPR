@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.model.Employee;
 import com.example.model.Position;
 
 public class PromotionService {
@@ -19,5 +20,12 @@ public class PromotionService {
         else{
             return null;
         }
+    }
+
+    public boolean canBePromoted (Employee employee) {
+        if(nextPosition(employee.getPosition()) != null) {
+            return true;
+        }
+        return false;
     }
 }
