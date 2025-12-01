@@ -80,21 +80,84 @@ public class PromotionServiceTest {
     }
     @Test
     public void positionShouldNotBeTheSameAfterPromotion() {
+        PromotionService promotionService = new PromotionService();
+        Employee employee = Employee.Builder.newInstance()
+                .setName("Jane")
+                .setSurname("Doe")
+                .setEmail("jane.doe@email.com")
+                .setCompanyName("AAA")
+                .setPosition(Position.PROGRAMMER)
+                .build();
 
+        promotionService.promote(employee);
+
+        assertThat(employee.getPosition())
+                .isNotSameAs(Position.PROGRAMMER);
     }
     @Test
     public void positionShouldBeManagerAfterPromotion() {
+        PromotionService promotionService = new PromotionService();
+        Employee employee = Employee.Builder.newInstance()
+                .setName("Jane")
+                .setSurname("Doe")
+                .setEmail("jane.doe@email.com")
+                .setCompanyName("AAA")
+                .setPosition(Position.PROGRAMMER)
+                .build();
 
+        promotionService.promote(employee);
+
+        assertThat(employee.getPosition())
+                .isEqualTo(Position.MANAGER);
     }
     //giveRaise
     @Test
     public void salaryShouldBeDefaultAfterPromotionIntoProgrammer(){
+        PromotionService promotionService = new PromotionService();
+        Employee employee = Employee.Builder.newInstance()
+                .setName("Jane")
+                .setSurname("Doe")
+                .setEmail("jane.doe@email.com")
+                .setCompanyName("AAA")
+                .setPosition(Position.INTERN)
+                .build();
 
+        promotionService.promote(employee);
+
+        assertThat(employee.getSalary())
+                .isEqualTo(Position.PROGRAMMER.getDefaultSalary());
     }
     @Test
-    public void salaryShouldBeRaisedByPercentage(){}
-    @Test
-    public void salaryShouldBeTheSameAsBeforeIfTooMuch(){
+    public void salaryShouldBeRaisedByPercentage(){
+        PromotionService promotionService = new PromotionService();
+        Employee employee = Employee.Builder.newInstance()
+                .setName("Jane")
+                .setSurname("Doe")
+                .setEmail("jane.doe@email.com")
+                .setCompanyName("AAA")
+                .setPosition(Position.INTERN)
+                .build();
 
+        promotionService.promote(employee, 220);
+
+        assertThat(employee.getSalary())
+                .isGreaterThan(Position.PROGRAMMER.getDefaultSalary())
+                .isLessThan(Position.MANAGER.getDefaultSalary());
+    }
+    @Test
+    public void salaryDefaultIfTooMuch(){
+        PromotionService promotionService = new PromotionService();
+        Employee employee = Employee.Builder.newInstance()
+                .setName("Jane")
+                .setSurname("Doe")
+                .setEmail("jane.doe@email.com")
+                .setCompanyName("AAA")
+                .setPosition(Position.INTERN)
+                .build();
+
+        promotionService.promote(employee, 500);
+
+        assertThat(employee.getSalary())
+                .isEqualTo(Position.PROGRAMMER.getDefaultSalary());
     }
 }
