@@ -50,7 +50,16 @@ public class PromotionServiceTest {
     }
     @Test
     public void shouldReturnFalseForCanNotBePromoted() {
-
+        PromotionService promotionService = new PromotionService();
+        Employee employee = Employee.Builder.newInstance()
+                .setName("Jane")
+                .setSurname("Doe")
+                .setEmail("jane.doe@email.com")
+                .setCompanyName("AAA")
+                .setPosition(Position.PRESIDENT)
+                .build();
+        assertThat(promotionService.canBePromoted(employee))    //Asercje na wartościach boolean
+                .isFalse();
     }
     //promote
     @Test
